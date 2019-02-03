@@ -9,7 +9,7 @@
 
 `numpy.ndarray` provides a number of very simple, intuitive and efficient approaches for working with (almost) homogeneous data. Theses are especially useful and scalable when working with multidimensional arrays. First, fancy indexing, `shape` and `dtype` mechanics provide very handy and concise methods for selecting from an array. In many cases these operations can be done transparently without making copies. The memory footprint for `numpy.ndarray` is quite predictable, with low overhead. Structured arrays can be lightweight alternatives for `pandas.DataFrame`, when performance and memory usage are important but index is not (_it was so in most of my tasks_). Masked array is a lightweight alternative for treating missing data.
 
-Vectorization of operations and selection's methods is usefull for solituon of applied task such as working with finite-difference scheme. Using cycle for iteration of conteiners is more verbose and implicit, than point-wise operation and don't request excess representation such as vectors and matrix (For example: `0.5*(a[1:] +a[:-1]`).
+Vectorization of operations and selection's methods is useful for solution of applied task such as working with finite-difference scheme. Using cycle for iteration of containers is more verbose and implicit, than point-wise operation and don't request excess representation such as vectors and matrix (For example: `0.5*(a[1:] +a[:-1]`).
 
 Vectorized operations on numpy arrays allow for performing many elementwise array operations with small code footprint and better readability compared to using loops. Of note is that these capabilities does not require to represent the data in form of linear algebra matrices and vectors, which can sometimes be quite cumbersome. An example is working with finite-difference schemes. By the way, in this case `numpy` plays very good with `numexpr` to parallelize these operations.
 
@@ -42,4 +42,4 @@ Numpy provides a number of methods for (de)serialization of multidimensional arr
 
 ## About author experience
 
-The author has been using actively using Numpy/Scipy for 7 years mainly to perform numerical PIC plasma simulations (also with `pyopencl`) and VHF interfermetry data processing.
+The author has been using actively using Numpy/Scipy for 7 years mainly to perform numerical PIC plasma simulations (also with `pyopencl`) and VHF interferometry data processing.
